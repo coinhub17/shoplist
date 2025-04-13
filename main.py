@@ -38,7 +38,7 @@ st.subheader(":blue[AFTER SHOPPING YOU CAN TRAVEL.]")
 st.subheader(":green[TRAVEL PACKAGES]", divider="blue")
 left, middle, right=st.columns(3)
 with st.container():
-    left.link_button(":bluer[Option 1]", "https://hotellook.tp.st/SUR7llTq",type="secondary", icon=None,use_container_width=False)
+    left.link_button(":blue[Option 1]", "https://hotellook.tp.st/SUR7llTq",type="secondary", icon=None,use_container_width=False)
     middle.link_button(":blue[Option 2]", "https://wayaway.tp.st/Kk6nVbjq",type="secondary", icon=None,use_container_width=False)
 
 @st.dialog(title="Contact Us")

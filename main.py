@@ -1,12 +1,51 @@
 import streamlit as st
 from pages.chat import contact_form
 
+# Set wide layout and a vibrant page title
 st.set_page_config(page_title="PRICETAG - AI Shopping Assistant", layout="wide")
 
-st.title(":green[PRICETAG - AI SHOPPING ASSISTANT]")
-st.subheader(":orange[Compare prices of Electronics and Gadgets using AI]", divider="green")
-st.write("Welcome to Pricetag, your AI-powered shopping assistant. Compare prices, explore deals, and inquire about product specs. Got questions? Reach out using the contact form below!")
-
+# Custom HTML for colorful gradient title
+st.markdown("""
+    <style>
+        .main-title {
+            font-size: 3em;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            margin-bottom: 0.5em;
+        }
+        .subtitle {
+            font-size: 1.3em;
+            color: #ff7f50;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+        .description {
+            text-align: center;
+            color: #444;
+            font-size: 1.1em;
+            margin-bottom: 2em;
+        }
+        .stButton>button {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 0.5em 1.2em;
+            font-size: 1.1em;
+        }
+    </style>
+    <div class="main-title">PRICETAG - AI SHOPPING ASSISTANT</div>
+    <div class="subtitle">Compare prices of Electronics and Gadgets using AI</div>
+    <div class="description">
+        Welcome to <strong>Pricetag</strong>, your AI-powered shopping assistant. <br/>
+        Compare prices, explore deals, and inquire about product specs. <br/>
+        Got questions? Reach out using the contact form below!
+    </div>
+""", unsafe_allow_html=True)
 # Reusable function to show product section with icons or thumbnails
 def product_section(title, links, images):
     with st.container():

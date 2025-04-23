@@ -51,7 +51,7 @@ def product_section(title, links, images):
     with st.container():
         st.markdown(f"### :blue[{title}]")
         cols = st.columns(3)
-        for col, (label, url, img) in zip(cols, zip(links, images)):
+        for col, ((label, url), img) in zip(cols, zip(links, images)):
             with col:
                 st.image(img, width=50)  # Product thumbnail
                 st.link_button(f":blue[{label}]", url, type="secondary", use_container_width=True)

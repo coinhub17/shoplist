@@ -90,5 +90,5 @@ product_section("Vacation Packages", [
 def show_form():
     contact_form()
 
-if st.button("Contact Us Here", type="primary"):
+if st.button("📩 Contact Us Here", type="primary"):
     show_form()

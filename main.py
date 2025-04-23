@@ -57,21 +57,21 @@ def product_section(title, links):
 
 # Electronics section
 product_section("Refrigerators", [
-    ("Amazon Refrigerators", "https://amazon.com"),
-    ("eBay Refrigerators", "https://ebay.com"),
-    ("BestBuy Refrigerators", "https://bestbuy.com")
+    ("Amazon Refrigerators", "https://amazon.com/Refrigerators"),
+    ("eBay Refrigerators", "https://ebay.com/Refrigerators"),
+    ("BestBuy Refrigerators", "https://bestbuy.com/Refrigerators")
 ])
 
 product_section("Laptops", [
-    ("Amazon Laptops", "https://amazon.com"),
-    ("eBay Laptops", "https://ebay.com"),
-    ("Newegg Laptops", "https://newegg.com")
+    ("Amazon Laptops", "https://amazon.com/laptops"),
+    ("eBay Laptops", "https://ebay.com/laptops"),
+    ("Newegg Laptops", "https://newegg.com/laptops")
 ])
 
 product_section("Smartphones", [
-    ("Amazon Phones", "https://amazon.com"),
-    ("eBay Phones", "https://ebay.com"),
-    ("BestBuy Phones", "https://bestbuy.com")
+    ("Amazon Phones", "https://amazon.com/Smartphones"),
+    ("eBay Phones", "https://ebay.com/Smartphones"),
+    ("BestBuy Phones", "https://bestbuy.com/Smartphones")
 ])
 
 st.divider()
